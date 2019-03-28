@@ -1,0 +1,11 @@
+div.carrusel{
+    display: flex;
+    flex-direction: row; /*valor por defecto del flex*/
+    justify-content: space-between;
+}
+
+    div.container{
+    display: flex;
+    flex-direction: row; /*valor por defecto del flex*/
+    justify-content: space-between;
+    }
