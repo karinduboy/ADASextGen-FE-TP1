@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="js/fontawesome-all.min.js">
-        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Indie+Flower" rel="stylesheet">
         <link rel="stylesheet" href="styles/style-home.css">
         <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
         <!-- title web -->
@@ -15,118 +15,123 @@
   <body>
 
     <header>
-      <a href="#" class="home-title">Mi blog de Cocina</a>
-        <nav class="menu">
-               <ul>
-                   <li><a href="#" class="nav-menu">Home</a></li>
-                   <li><a href="#" class="nav-menu">Platos</a></li>
-                        <ul>
-                            <li><a href="#" class="nav-menu">Ensalada</a></li>
-                            <li><a href="#" class="nav-menu">Carne</a></li>
-                            <li><a href="#" class="nav-menu">Helados</a></li>
-                        </ul>
-                   <li><a href="#" class="nav-menu">Sobre Mí</a></li>
-                   <li><a href="#" class="nav-menu">Contacto</a></li>
-               </ul>
-              </nav>
-          </header>
-          <div class="carrusel">
-              <div class="receta">
-               <img src="images/img-1.jpg">
-              </div>
-              <div class="receta1">
-               <img src="images/img-2.jpg">
-              </div>
-              <div class="receta2">
-               <img src="images/img-3.jpg">
-              </div>
-              <div class="receta3">
-              <img src="images/img-4.jpg">
-              </div>
-          </div>
-          <section class="submenu">
-              <div class="container">
-                 <div>
-                    <img src="images/platos.jpeg">
-                   <a href="#">Platos</a>
-                 </div>
-                 <div>
-                    <img src="images/recetas.JPG">
-                   <a href="#">Recetas</a>   
-                 </div>
-                 <div>
-                    <img src="images/exoticos.JPG">
-                   <a href="#">Exoticos</a>  
-                 </div>
-              </div>
-          </section>
-          <div class="container">
-              <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/24Hf_StuQGc" 
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-                    <p class="video-date">20 de abril</p>
-                    <p class="video-title">¿Cómo preparar las mejores hamburguesas?</p>
-              </div>
-              <aside>
-                <p>SOBRE MI</p>
-                <div class="img">
-
-                </div>
-                <p>Natalia Guida</p>
-                <p>Tengo 23 años,hace 2 que estudio cocina y soy fanatica de la comida,espero que les
-                 guste mi contenido</p>
-                <a href="#">Newslatter</a>
-              </aside>
-          </div>
-          <section class="latest-posts">  <!-- 2/3 container -->
-              <div class="container-dostercios">
-                <div><!-- para la imagen -->
-                  <img src="images/nota1.JPG">
-                </div>
-                <div> <!-- contiene los post -->
-                <div class="post-data"><!-- autor y fecha -->
-                  <a href="#">By Maria</a>
-                  <a href="#">Mayo 19, 2017</a>
-                </div>
-                <div class="post-social"><!-- redes -->
-                  <a href="#"><i class="far fa-heart"></i></a>
-                  <a href="#"><i class="far fa-comments"></i></a>
-                  <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                </div>
-                <h2>Delicias dulces</h2>
-                <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
-                <a href="#">Leer más</a>
-                <div><!-- para la imagen -->
-                  <img src="images/nota2.JPG">
-                </div>
-                <div> <!-- contiene los post -->
-                <div class="post-data"><!-- autor y fecha -->
-                  <a href="#">By Maria</a>
-                  <a href="#">Mayo 19, 2017</a>
-                </div>
-                <div class="post-social"><!-- redes -->
-                  <a href="#"><i class="far fa-heart"></i></a>
-                  <a href="#"><i class="far fa-comments"></i></a>
-                  <a href="#"><i class="fas fa-share-alt"></i></a>
-                </div>
-                </div>
-                <h2>Comidas simples</h2>
-                <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
-                <a href="#">Leer más</a>
-              </div>
-          </section>
-          <footer>
-            <div class="container"> <!-- iconos -->
-                <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
-                <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
-                <a href="#"><i class="fab fa-google-plus-g"></i>GOOGLE+</a>
-                <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
-                <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
-                <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
+      <h1>
+          <a href="#" class="home-title">Mi Blog de Cocina</a>
+      </h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="nav-menu">Home</a></li>
+                <li><a href="#" class="nav-menu">Platos
+                        <i class="fas fa-sort-down"></i>
+                    </a>
+                </li>
+                    <ul class="menu-lev2">
+                        <li><a href="#" class="nav-menu">Ensalada</a></li>
+                        <li><a href="#" class="nav-menu">Carne</a></li>
+                        <li><a href="#" class="nav-menu">Helados</a></li>
+                    </ul>
+                <li><a href="#" class="nav-menu">Sobre Mí</a></li>
+                <li><a href="#" class="nav-menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrusel">
+        <div class="receta">
+        <img src="images/img-1.jpg">
+        </div>
+        <div class="receta1">
+        <img src="images/img-2.jpg">
+        </div>
+        <div class="receta2">
+        <img src="images/img-3.jpg">
+        </div>
+        <div class="receta3">
+        <img src="images/img-4.jpg">
+        </div>
+    </div>
+    <section class="submenu">
+        <div class="container">
+            <div>
+            <img src="images/platos.jpeg">
+            <a href="#">Platos</a>
             </div>
-          </footer>
+            <div>
+            <img src="images/recetas.JPG">
+            <a href="#">Recetas</a>   
+            </div>
+            <div>
+            <img src="images/exoticos.JPG">
+            <a href="#">Exoticos</a>  
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="video">
+            <iframe width="100%" src="https://www.youtube.com/embed/24Hf_StuQGc" 
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <p class="video-date">20 de abril</p>
+            <p class="video-title">¿Cómo preparar las mejores hamburguesas?</p>
+        </div>
+        <aside>
+            <p class="color-blck">SOBRE MI</p>
+            <div class="img">
+                <img src="images/profile1.jpg" alt="cooking blogger">
+            </div>
+            <p>Natalia Guida</p>
+            <p>Tengo 23 años,hace 2 que estudio cocina y soy fanatica de la comida,espero que les
+                guste mi contenido</p>
+            <a href="#" class="color-blck">Newsletter</a>
+        </aside>
+    </div>
+    <section class="container latest-posts">  
+        <div class="container-dostercios"><!-- 2/3 container -->
+            <div><!-- para la imagen -->
+                <img src="images/nota1.JPG">
+            </div>
+            <div> <!-- contiene los post -->
+            <div class="post-data"><!-- autor y fecha -->
+                <a href="#">By Maria</a>
+                <a href="#">Mayo 19, 2017</a>
+            </div>
+            <div class="post-social"><!-- redes -->
+                <a href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><i class="far fa-comments"></i></a>
+                <a href="#"><i class="fas fa-share-alt"></i></a>
+            </div>
+            </div>
+            <h2>Delicias dulces</h2>
+            <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+            <a href="#">Leer más</a>
+            <div><!-- para la imagen -->
+                <img src="images/nota2.JPG">
+            </div>
+        <div> <!-- contiene los post -->
+            <div class="post-data"><!-- autor y fecha -->
+                <a href="#">By Maria</a>
+                <a href="#">Mayo 19, 2017</a>
+            </div>
+                <div class="post-social"><!-- redes -->
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-comments"></i></a>
+                    <a href="#"><i class="fas fa-share-alt"></i></a>
+                </div>
+            </div>
+            <h2>Comidas simples</h2>
+            <p>En este articulo van a poder ver una receta muy simple, sana y muy rica!</p>
+            <a href="#">Leer más</a>
+        </div>
+    </section>
+    <footer>
+        <div class="container"> <!-- iconos -->
+            <a href="#"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+            <a href="#"><i class="fab fa-twitter"></i>TWITTER</a>
+            <a href="#"><i class="fab fa-google-plus-g"></i>GOOGLE+</a>
+            <a href="#"><i class="fab fa-linkedin"></i>LINKEDIN</a>
+            <a href="#"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+            <a href="#"><i class="fab fa-youtube"></i>YOUTUBE</a>
+        </div>
+    </footer>
 
 </body>
 </html>

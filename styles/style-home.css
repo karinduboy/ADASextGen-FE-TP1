@@ -16,9 +16,53 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-  text-decoration: none
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none
+}
+
+html,body, a{
+    font-family: 'Cutive Mono', monospace;
+    color: #868686;
+    font-size: 16px; /*DEFINICIÓN DE TAMAÑO DE LETRA GENERAL*/
+}
+
+h1 a{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(250, 125, 162);
+    display: block;
+    text-align: center; /* lo coloco para centrar el texto aunque debería funcionar solo con margin no? */
+    margin: 2% auto; /*por qué no funciona sólo para centrar y tengo que colocar la linea anterior?*/
+}
+
+nav{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.menu{
+    color: black;
+}
+
+ul.menu{
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li a.nav-menu{
+    display: inline-block;
+    padding: 0.4em 0;
+    text-transform: uppercase;
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+}
+
+ul.menu-lev2{
+    display: none;
 }
 
 div.carrusel{
@@ -27,8 +71,60 @@ div.carrusel{
     justify-content: space-between;
 }
 
-    div.container{
+.container{
+    width: 90%;
+    max-width: 900px;
     display: flex;
     flex-direction: row; /*valor por defecto del flex*/
     justify-content: space-between;
-    }
+    /* overflow: hidden; */
+    margin: 5% auto;
+}
+
+.container-dostercios{
+    width: 60%;
+    margin: 5% 30% 5% 0;
+    max-width: 600px;
+}
+
+.video{
+    /* width: 75%; */
+    margin: 0 5% 0 0;
+    flex: 2;
+    display: block;
+    object-fit: conver;
+    object-position: left;
+}
+
+.video p{
+    display: inline-block;
+}
+
+aside{
+    flex: 1;
+    max-width: 300px:
+}
+
+aside .img{
+    width: 80%;
+    height: 75%;
+    border-radius:50%;
+    /* object-fit: cover;
+    object-position: right; */
+    overflow: hidden;
+    margin: 10% auto;
+}
+
+div.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.color-blck{
+    background-color: rgb(255, 220, 226);
+    display: block;
+    font-size: 0.8em;
+    color: black;
+}
