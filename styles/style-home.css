@@ -21,14 +21,82 @@ time, mark, audio, video {
   text-decoration: none
 }
 
-div.carrusel{
-    display: flex;
-    flex-direction: row; /*valor por defecto del flex*/
-    justify-content: space-between;
+header{
+  margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 900px;
+    text-align: center;
 }
 
-    div.container{
+li{
+  display: inline;
+  margin: 5px;
+}
+
+div.carousel{
     display: flex;
-    flex-direction: row; /*valor por defecto del flex*/
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.receta{
+  margin: 5px;
+}
+
+div.container{
+    display: flex;
+    justify-content:center;
+    }
+
+    .latest-images{
+      border-radius: 35px;
+    }
+
+    .latest-posts2{
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 30px 25px;
+    }
+
+    .latest-posts-2{
+      padding: 30px 25px;
+    }
+
+    .lp-2{
+      float: right;
+      padding: 30px 100px;
+      display: flex;
+    }
+
+    h2{
+      font-size: 20px
+    }
+
+    .more{
+      border: 1px solid peachpuff;
+      width: 120px;
+      text-align: center;
+      margin: 15px 0 0 0;
+      padding: 6px 0;
+      box-sizing: border-box;
+      color: #110d0d;
+      float: right;
+      background-color: peachpuff;
+      border-radius: 8px;
+      letter-spacing: 1px;
+    }
+
+    .lp-top-line{
+      border-right: 1px solid #ccc;
+    }
+
+    .heart, .commentary, .share{
+      padding: 0 10px;
+    }
+
+    footer{
+      padding: 20px 25px;
+      border-bottom: 1px solid #ccc;
+      margin: 20px;
     }
