@@ -27,7 +27,8 @@ html,body, a{
     font-size: 16px; /*DEFINICIÓN DE TAMAÑO DE LETRA GENERAL*/
 }
 
-h1 a{
+/* estilos para el titulo del blog */
+a.home-title{
     font-family: 'Indie Flower', cursive;
     font-size: 3em;
     font-weight: bold;
@@ -36,34 +37,63 @@ h1 a{
     text-align: center; /* lo coloco para centrar el texto aunque debería funcionar solo con margin no? */
     margin: 2% auto; /*por qué no funciona sólo para centrar y tengo que colocar la linea anterior?*/
 }
-
-nav{
-    width: 30%;
+/* barra de menú */
+nav{ /* tamaño. y centrado de la barra de menu nav */
+    width: 40%;
+    min-width: 400px;
     margin: 0 auto;
 }
 
 .menu{
-    color: black;
+    color: rgb(17, 17, 17);
 }
 
-ul.menu{
-    /* display: inline-block; */
+ul.menu{ /* ajuste de espaciado del menu con flex */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative
 }
 
-ul li a.nav-menu{
+.dropdown{ /* posición para que el menu dropdown se ubique correctamente */
+    position: relative;
+}
+
+a.nav-menu{ /* estilo de los links de menu */
     display: inline-block;
-    padding: 0.4em 0;
+    padding: 0.4em 2em;
     text-transform: uppercase;
-    color: rgb(17, 17, 17);
+    color: #575757;
     font-weight: bold;
 }
 
-ul.menu-lev2{
+.menu-lev2{ /* estilos del menu desplegable, hidden por defecto */
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 1;
+    width: 25%;
+    min-width: 150px;
     display: none;
+    background-color: whitesmoke;
 }
+
+.menu-lev2 a.nav-menu{ /* estilo de los links del menu secundario, ocultos con el ul */
+    padding: 0.5em 0;
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.dropdown:hover, .nav-menu:hover{ /* estilos de hover del menu y el dropdown */
+    color: rgb(250,125,162);
+}
+
+.dropdown:hover .menu-lev2{ /* aparicion del menu desplegable */
+    display: block;
+}
+
+
 
 div.carrusel{
     display: flex;
@@ -81,7 +111,7 @@ div.carrusel{
     margin: 2% auto;
 }
 
-.submenu-bg{
+.container-submenu-bg{
     width: 32%;
     height: 30vh;
     position: relative;
@@ -89,14 +119,14 @@ div.carrusel{
     overflow: hidden;
 }
 
-section.submenu div.submenu-bg img{ /* posicionamiento de la imagen de background del submenu */
+section.submenu div.container-submenu-bg img{ /* posicionamiento de la imagen de background del submenu */
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-div.submenu-bg a.submenu-cat{
+div.container-submenu-bg a.submenu-cat{
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -111,8 +141,13 @@ div.submenu-bg a.submenu-cat{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-div.submenu-bg a.submenu-cat:hover{
+
+div.container-submenu-bg a.submenu-cat:hover{
     background-color: rgb(250,125,162);
+}
+
+a.submenu-cat:hover + img{
+    display: none;
 }
 
 .container-dostercios{

@@ -15,21 +15,19 @@
   <body>
 
     <header>
-      <h1>
-          <a href="#" class="home-title">Mi Blog de Cocina</a>
-      </h1>
+        <a href="#" class="home-title">Mi Blog de Cocina</a>
         <nav>
             <ul class="menu">
                 <li><a href="#" class="nav-menu">Home</a></li>
-                <li><a href="#" class="nav-menu">Platos
-                        <i class="fas fa-sort-down"></i>
-                    </a>
+                <li class="dropdown">
+                    <a href="#" class="nav-menu">Platos<i class="fas fa-sort-down"></i>
+                        <ul class="menu-lev2">
+                            <li><a href="#" class="nav-menu">Ensalada</a></li>
+                            <li><a href="#" class="nav-menu">Carne</a></li>
+                            <li><a href="#" class="nav-menu">Helados</a></li>
+                        </ul>
+                    </a>                    
                 </li>
-                    <ul class="menu-lev2">
-                        <li><a href="#" class="nav-menu">Ensalada</a></li>
-                        <li><a href="#" class="nav-menu">Carne</a></li>
-                        <li><a href="#" class="nav-menu">Helados</a></li>
-                    </ul>
                 <li><a href="#" class="nav-menu">Sobre Mí</a></li>
                 <li><a href="#" class="nav-menu">Contacto</a></li>
             </ul>
@@ -52,17 +50,17 @@
     <!-- cajas de menu grafico -->
     <section class="submenu">
         <div class="container"> <!-- contenedor central -->
-            <div class="submenu-bg">
-                <img src="images/platos.jpeg">
+            <div class="container-submenu-bg"> <!-- clase de estilo para todos los submenu graficos -->
                 <a class="submenu-cat" href="#">Platos</a>
+                <img src="images/platos.jpeg">
             </div>
-            <div class="submenu-bg">
-                <img src="images/recetas.JPG">
-                <a class="submenu-cat" href="#">Recetas</a>   
+            <div class="container-submenu-bg">
+                <a class="submenu-cat" href="#">Recetas</a>  
+                <img src="images/recetas.JPG"> 
             </div>
-            <div class="submenu-bg">
-                <img src="images/exoticos.JPG">
+            <div class="container-submenu-bg">
                 <a class="submenu-cat" href="#">Exoticos</a>  
+                <img src="images/exoticos.JPG">
             </div>
         </div>
     </section>
