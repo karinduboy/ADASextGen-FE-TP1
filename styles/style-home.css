@@ -78,36 +78,69 @@ div.carrusel{
     flex-direction: row; /*valor por defecto del flex*/
     justify-content: space-between;
     /* overflow: hidden; */
-    margin: 5% auto;
+    margin: 2% auto;
 }
 
+.submenu-bg{
+    width: 32%;
+    height: 30vh;
+    position: relative;
+    border-radius: 5vh;
+    overflow: hidden;
+}
+
+section.submenu div.submenu-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 .container-dostercios{
-    width: 60%;
-    margin: 5% 30% 5% 0;
+    width: 65%;
+    margin: 3% 0;
     max-width: 600px;
+    overflow: hidden;
 }
 
 .video{
     /* width: 75%; */
-    margin: 0 5% 0 0;
+    margin: 0 1% 0 0;
     flex: 2;
     display: block;
-    object-fit: conver;
-    object-position: left;
+    /* object-fit: conver;
+    object-position: left; */
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .video p{
     display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.video p.video-date{
+    border-right: solid 1px #868686;
+    padding: 0 2% 0 0;
 }
 
 aside{
     flex: 1;
-    max-width: 300px:
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 0 0 1%;
 }
 
 aside .img{
-    width: 80%;
-    height: 75%;
+    width: 200px;
+    height: 200px;
     border-radius:50%;
     /* object-fit: cover;
     object-position: right; */
@@ -126,5 +159,32 @@ div.img img{
     background-color: rgb(255, 220, 226);
     display: block;
     font-size: 0.8em;
+    font-weight: bold;
     color: black;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+}
+
+aside p{
+    text-align: center;
+}
+
+aside p.title{
+    font-size: 1.2em;
+    margin: 5% 0;
+}
+
+aside p.bio-desc{
+    margin: 0 5% 10% 5%;
+    width: 90%;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    font-weight: bold;
 }
