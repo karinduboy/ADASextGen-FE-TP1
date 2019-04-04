@@ -1,17 +1,17 @@
 /* HOJA DE ESTILOS ADICIONALES PARA LA PAGINA DE RECETAS */
 
 /* CONTENEDOS PARA EL BANNER */
-.post-header{
+.featured-img{ /* contenedor para la imagen banner del post */
     width: 100%;
-    height: 40vh;
+    height: 20vw; /* usando vw mantenemos la proporción de la imagen en cualquie tamaño de pantalla */
     overflow: hidden;
     margin: 0 0 1% 0;
 }
 
-.post-header img{
+.post-header{ /* posicionamiento de la imagen dentro de su contenedor */
     width: 100%;
-    /* height: 100%; */
-    object-fit: fill;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -48,7 +48,7 @@
 .blog-img-container img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     object-position: center;    
 }
 
@@ -73,10 +73,15 @@ a.social-icon .icon{
     color: white;
     display: block;
     /* display: inline-block; */
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     /* line-height: 1.5em; */
-    margin:auto auto;
+}
+
+a.fb>.icon, a.ig>.icon, a.tw>.icon{ /* alineación de los iconos dentro del contenedor que les da el background, por alguna razón los cambia a svg y no toma el selector i. */
+    margin:0.15em auto;
+    display: block;
+    text-align: center;
 }
 
 a.fb{
@@ -93,7 +98,7 @@ a.gp .icon{
 }
 
 a.ig{
-    background-color: #dfd193;
+    background-color: #6b5843;
 }
 
 a.pt .icon{
