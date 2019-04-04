@@ -72,10 +72,6 @@ ul.menu-lev2{
     justify-content: space-between;
 }
 
-.receta{
-  margin: 5px;
-}
-
 .container{
     display: flex;
     flex-direction: row; /*valor por defecto del flex*/
@@ -85,7 +81,71 @@ ul.menu-lev2{
     margin: 5% auto;
     }
 
-    .container-dostercios{
+    .recipe{
+      margin: 5px;
+    }
+
+    .recipes{
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    .recipes li{
+      float: left;
+      padding: 0px;
+      position: relative;
+      overflow: hidden;
+    }
+    .recipes li:hover .caption{
+      opacity: 1;
+      transform: translateY(-100px);
+      -webkit-transform:translateY(-100px);
+      -moz-transform:translateY(-100px);
+      -ms-transform:translateY(-100px);
+      -o-transform:translateY(-100px);
+    }
+
+    .recipes img{
+      margin: 0px;
+      padding: 0px;
+      float: left;
+      z-index: 4;
+    }
+    .recipes .caption{
+      cursor: pointer;
+      position: absolute;
+      opacity: 0;
+      top:300px;
+      -webkit-transition:all 0.15s ease-in-out;
+      -moz-transition:all 0.15s ease-in-out;
+      -o-transition:all 0.15s ease-in-out;
+      -ms-transition:all 0.15s ease-in-out;
+      transition:all 0.15s ease-in-out;
+    }
+    
+    .recipes .blur{
+      background-color: rgba(255,0,0,0.3);
+      height: 300px;
+      width: 400px;
+      z-index: 5;
+      position: absolute;
+    }
+    .recipes .caption-text h2{
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .recipes .caption-text{
+      z-index: 10;
+      color: #fff;
+      position: absolute;
+      width: 400px;
+      height: 300px;
+      text-align: center;
+      top:20px;
+    }
+
+.container-dostercios{
       width: 80%;
       margin: 5% 0 0 0;
       max-width: 600px;
