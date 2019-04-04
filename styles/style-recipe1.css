@@ -1,0 +1,134 @@
+/* HOJA DE ESTILOS ADICIONALES PARA LA PAGINA DE RECETAS */
+
+/* CONTENEDOS PARA EL BANNER */
+.post-header{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin: 0 0 1% 0;
+}
+
+.post-header img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+    object-position: center;
+}
+
+.breadcrumb{
+    margin: 0 0 0 10%;
+    font-weight: bold;
+}
+
+.breadcrumb a.bc-lv1, .breadcrumb i{
+    font-size: 0.7em;
+}
+
+.middle-container{
+    width: 40%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.blog-img{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.blog-img-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: calc(40vh/10);    
+}
+
+.blog-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;    
+}
+
+aside.social-btns{
+    position: absolute;
+    display: block;
+    left: 0;
+    top:50%;
+    transform: translate(-200%,-50%)
+}    
+
+a.social-icon{
+    width: 1.5em;
+    height:1.5em;
+    border-radius: 0.75em;
+    overflow: hidden;
+    display: block;
+    margin: 0 0 0.5em 0;
+}
+
+a.social-icon .icon{
+    color: white;
+    display: block;
+    /* display: inline-block; */
+    font-size: 1.5em;
+    text-align: center;
+    /* line-height: 1.5em; */
+    margin:auto auto;
+}
+
+a.fb{
+   background-color: #3b5998;
+}
+
+a.tw{
+    background-color: #00acee;
+}
+
+a.gp .icon{
+    font-size: 1.5em;
+    color:#d34836;
+}
+
+a.ig{
+    background-color: #dfd193;
+}
+
+a.pt .icon{
+    font-size: 1.5em;
+    color: #c8232c;
+}
+
+h1.post-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin: 1em 0; 
+}
+
+.phrase{
+    border-left: 1px solid rgb(250,125,162);
+    padding: 0 0 0 5%;
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.phrase-content{
+    font-weight: bold;
+    color: black;
+    margin: 0 0 2em 0;
+    line-height: 1em;
+}
+
+.phrase-author{
+    font-weight: bold;
+}
+
+li.ingredient:before{
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color:rgb(250,125,162);
+} 
