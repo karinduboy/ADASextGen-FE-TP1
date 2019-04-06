@@ -61,7 +61,7 @@ ul.menu{ /* ajuste de espaciado del menu con flex */
 
 a.nav-menu{ /* estilo de los links de menu */
     display: inline-block;
-    padding: 0.4em 2em;
+    padding: 0.4em 0em;
     text-transform: uppercase;
     color: #575757;
     font-weight: bold;
@@ -72,17 +72,18 @@ a.nav-menu{ /* estilo de los links de menu */
     top:100%;
     left: 0;
     z-index: 1;
-    width: 25%;
-    min-width: 150px;
+    width: auto; /* con esto todo el bloque del menù se ajusta al tamaño del texto */
+    min-width: 100px;
+    padding: 0.5em 0;
     display: none;
     background-color: whitesmoke;
 }
 
 .menu-lev2 a.nav-menu{ /* estilo de los links del menu secundario, ocultos con el ul */
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
     display: block;
     float: none;
-    text-align: center;
+    text-align: left;
 }
 
 .dropdown:hover, .nav-menu:hover{ /* estilos de hover del menu y el dropdown */
