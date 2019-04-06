@@ -24,11 +24,12 @@ time, mark, audio, video {
 
 html,body, a{
     font-family: 'Cutive Mono', monospace;
-    color: #868686;
+    color: #575757;
     font-size: 16px; /*DEFINICIÓN DE TAMAÑO DE LETRA GENERAL*/
 }
 
-.home-title{
+/* estilos para el titulo del blog */
+a.home-title{
     font-family: 'Indie Flower', cursive;
     font-size: 3em;
     font-weight: bold;
@@ -37,33 +38,61 @@ html,body, a{
     text-align: center; /* lo coloco para centrar el texto aunque debería funcionar solo con margin no? */
     margin: 2% auto; /*por qué no funciona sólo para centrar y tengo que colocar la linea anterior?*/
 }
-
-nav{
-    width: 30%;
+/* barra de menú */
+nav{ /* tamaño. y centrado de la barra de menu nav */
+    width: 40%;
+    min-width: 400px;
     margin: 0 auto;
 }
 
 .menu{
-    color: black;
+    color: rgb(17, 17, 17);
 }
 
-ul.menu{
-    /* display: inline-block; */
+ul.menu{ /* ajuste de espaciado del menu con flex */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative
 }
 
-ul li a.nav-menu{
+.dropdown{ /* posición para que el menu dropdown se ubique correctamente */
+    position: relative;
+}
+
+a.nav-menu{ /* estilo de los links de menu */
     display: inline-block;
-    padding: 0.4em 0;
+    padding: 0.4em 0em;
     text-transform: uppercase;
-    color: rgb(17, 17, 17);
+    color: #575757;
     font-weight: bold;
 }
 
-ul.menu-lev2{
+.menu-lev2{ /* estilos del menu desplegable, hidden por defecto */
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 1;
+    width: auto; /* con esto todo el bloque del menù se ajusta al tamaño del texto */
+    min-width: 100px;
+    padding: 0.5em 0;
     display: none;
+    background-color: whitesmoke;
+}
+
+.menu-lev2 a.nav-menu{ /* estilo de los links del menu secundario, ocultos con el ul */
+    padding: 0.5em 1em;
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+.dropdown:hover, .nav-menu:hover{ /* estilos de hover del menu y el dropdown */
+    color: rgb(250,125,162);
+}
+
+.dropdown:hover .menu-lev2{ /* aparicion del menu desplegable */
+    display: block;
 }
 
 .carousel{
@@ -78,12 +107,12 @@ ul.menu-lev2{
     justify-content: space-between;
     width: 90%;
     max-width: 900px;
-    margin: 5% auto;
+    margin: 2% auto;
     }
 
-    .recipe{
-      margin: 5px;
-    }
+.recipe{
+  margin: 5px;
+}
 
     .recipes{
       list-style-type: none;
@@ -131,11 +160,11 @@ ul.menu-lev2{
       z-index: 5;
       position: absolute;
     }
-    .recipes .caption-text h2{
+.recipes .caption-text h2{
       text-transform: uppercase;
       font-size: 18px;
     }
-    .recipes .caption-text{
+.recipes .caption-text{
       z-index: 10;
       color: #fff;
       position: absolute;
@@ -145,24 +174,37 @@ ul.menu-lev2{
       top:20px;
     }
 
-.container-dostercios{
-      width: 80%;
-      margin: 5% 0 0 0;
-      max-width: 600px;
-    }
 
-    .video{
-      /* width: 75%; */
-      margin: 0 5% 0 0;
-      flex: 2;
-      display: block;
-      object-fit: conver;
-      object-position: left;
+.container-dostercios{
+      width: 65%;
+      margin: 3% 0;
+      max-width: 600px;
   }
   
-  .video p{
-      display: inline-block;
-  }
+.video{
+    /* width: 75%; */
+    margin: 0 1% 0 0;
+    flex: 2;
+    display: block;
+}
+
+.video iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.video p{
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.video p.video-date{
+    border-right: solid 1px #868686;
+    padding: 0 2% 0 0;
+}
   
   aside{
       flex: 1;
@@ -290,3 +332,100 @@ ul.menu-lev2{
 }
 
 
+
+.container-submenu-bg{
+    width: 32%;
+    height: 30vh;
+    position: relative;
+    border-radius: 5vh;
+    overflow: hidden;
+}
+
+section.submenu div.container-submenu-bg img{ /* posicionamiento de la imagen de background del submenu */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+div.container-submenu-bg a.submenu-cat{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    padding: 0.5em 20%;
+    margin: 0 auto;
+    background-color: white; 
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.container-submenu-bg a.submenu-cat:hover{
+    background-color: rgb(250,125,162);
+}
+
+a.submenu-cat:hover + img{
+    display: none;
+}
+
+
+
+
+aside{
+    flex: 1;
+    max-width: 300px;
+    overflow: hidden;
+    margin: 0 0 0 1%;
+}
+
+aside .img{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    overflow: hidden;
+    margin: 10% auto;
+}
+
+div.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.color-blck{
+    background-color: rgb(255, 220, 226);
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.2em;
+    text-align: center;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.title{
+    color: black;
+    font-weight: bold;
+}
+
+aside p{
+    text-align: center;
+}
+
+aside p.title{
+    font-size: 1.2em;
+    margin: 5% 0;
+}
+
+aside p.bio-desc{
+    margin: 0 5% 10% 5%;
+    width: 90%;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    font-weight: bold;
+}
