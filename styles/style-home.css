@@ -108,78 +108,105 @@ a.nav-menu{ /* estilo de los links de menu */
     width: 90%;
     max-width: 900px;
     margin: 2% auto;
-    }
+}
 
 .recipe{
   margin: 5px;
 }
 
-    .recipes{
-      list-style-type: none;
-      margin: 0px;
-      padding: 0px;
+.recipes{
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
       
-    }
-    .recipes li{
-      float: left;
-      padding: 0px;
-      position: relative;
-      overflow: hidden;
-    }
-    .recipes li:hover .caption{
+}
+.recipes li{
+  float: left;
+  padding: 0px;
+  position: relative;
+}
+
+.recipes li:hover .caption{
       opacity: 1;
       transform: translateY(-100px);
       -webkit-transform:translateY(-100px);
       -moz-transform:translateY(-100px);
       -ms-transform:translateY(-100px);
       -o-transform:translateY(-100px);
-    }
+}
 
-    .recipes img{
+.recipes img{
       margin: 0px;
       padding: 0px;
       float: left;
       z-index: 4;
-    }
-    .recipes .caption{
+}
+
+.recipes .caption{
       cursor: pointer;
       position: absolute;
       opacity: 0;
-      top:300px;
+      top:400px;
       -webkit-transition:all 0.15s ease-in-out;
       -moz-transition:all 0.15s ease-in-out;
       -o-transition:all 0.15s ease-in-out;
       -ms-transition:all 0.15s ease-in-out;
       transition:all 0.15s ease-in-out;
-    }
+}
     
-    .recipes .blur{
+.recipes .blur{
       background-color: rgba(255,0,0,0.3);
-      height: 300px;
-      width: 400px;
+      height: 100px;
+      width: 320.5px;
       z-index: 5;
       position: absolute;
-    }
-.recipes .caption-text h2{
-      text-transform: uppercase;
-      font-size: 18px;
-    }
+}
+
+.recipes .description{
+  margin: 0 0 0 5px;
+}
+.recipes .description-p{
+  margin: 0 5px;
+}
+
+.description h2{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  width: 320px;
+  margin: 40px 0 0 0;
+}
+
+.recipes .caption-text p{
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  padding: 0 5px;
+  width: 200px;
+
+}
+
+.recipes .caption-text p.carousel{
+  border-right: 1px solid #fff;
+  width: 120px;
+  padding: 0 auto;
+}
+
 .recipes .caption-text{
-      z-index: 10;
-      color: #fff;
-      position: absolute;
-      width: 400px;
-      height: 300px;
-      text-align: center;
-      top:20px;
-    }
-
-
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 320px;
+  height: 300px;
+  top:20px;
+  display: flex;
+}
+    
 .container-dostercios{
-      width: 65%;
-      margin: 3% 0;
-      max-width: 600px;
-  }
+  width: 65%;
+  margin: 3% 0;
+  max-width: 600px;
+}
   
 .video{
     /* width: 75%; */
@@ -262,7 +289,7 @@ a.nav-menu{ /* estilo de los links de menu */
     
     .lp-2{
       display: flex;
-      width: 350px;
+      width: 380px;
     }
 
     h2{
@@ -369,9 +396,6 @@ a.submenu-cat:hover + img{
     display: none;
 }
 
-
-
-
 aside{
     flex: 1;
     max-width: 300px;
@@ -388,42 +412,42 @@ aside .img{
 }
 
 div.img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
 }
 
 .color-blck{
-    background-color: rgb(255, 220, 226);
-    display: block;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: black;
-    line-height: 1.2em;
-    text-align: center;
-    padding: 0.5em 0;
-    text-transform: uppercase;
+  background-color: rgb(255, 220, 226);
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: black;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 0.5em 0;
+  text-transform: uppercase;
 }
 
 .title{
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 aside p{
-    text-align: center;
+ text-align: center;
 }
 
 aside p.title{
-    font-size: 1.2em;
-    margin: 5% 0;
+  font-size: 1.2em;
+  margin: 5% 0;
 }
 
 aside p.bio-desc{
-    margin: 0 5% 10% 5%;
-    width: 90%;
-    font-size: 0.9em;
-    line-height: 0.9em;
-    font-weight: bold;
+  margin: 0 5% 10% 5%;
+  width: 90%;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  font-weight: bold;
 }
