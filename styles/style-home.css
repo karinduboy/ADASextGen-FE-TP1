@@ -136,7 +136,7 @@ a.nav-menu{ /* estilo de los links de menu */
 }
 
 .recipes img{
-      margin: 0px;
+      margin: 0 0 0 6px;
       padding: 0px;
       float: left;
       z-index: 4;
