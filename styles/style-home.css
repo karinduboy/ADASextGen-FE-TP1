@@ -152,6 +152,7 @@ a.nav-menu{ /* estilo de los links de menu */
       -o-transition:all 0.15s ease-in-out;
       -ms-transition:all 0.15s ease-in-out;
       transition:all 0.15s ease-in-out;
+      margin: 0 0 0 6px;
 }
     
 .recipes .blur{
