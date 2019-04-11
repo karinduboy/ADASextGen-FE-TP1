@@ -51,38 +51,42 @@ table {
 /* INICIO DE LOS ESTILOS DE MI BLOG DE COCINA BY KARIN Y GABY */
 
 html,body, a{
-    font-family: 'Cutive Mono', monospace;
-    color: #575757;
-    font-size: 16px; /*DEFINICIÓN DE TAMAÑO DE LETRA GENERAL*/
+  font-family: 'Cutive Mono', monospace;
+  color: #575757;
+  font-size: 16px; /*DEFINICIÓN DE TAMAÑO DE LETRA GENERAL*/
 }
 
 /* estilos para el titulo del blog */
 a.home-title{
-    font-family: 'Indie Flower', cursive;
-    font-size: 3em;
-    font-weight: bold;
-    color: rgb(250, 125, 162);
-    display: block;
-    text-align: center; /* lo coloco para centrar el texto aunque debería funcionar solo con margin no? */
-    margin: 2% auto; /*por qué no funciona sólo para centrar y tengo que colocar la linea anterior?*/
+  font-family: 'Indie Flower', cursive;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(250, 125, 162);
+  display: block;
+  text-align: center; /* lo coloco para centrar el texto aunque debería funcionar solo con margin no? */
+  margin: 2% auto; /*por qué no funciona sólo para centrar y tengo que colocar la linea anterior?*/
 }
 
 /* barra de menú */
 nav{ /* tamaño. y centrado de la barra de menu nav */
-    width: 40%;
-    min-width: 400px;
-    margin: 0 auto;
+  width: 40%;
+  min-width: 400px;
+  margin: 0 auto;
 }
 
 .menu{
-    color: rgb(17, 17, 17);
+  color: rgb(17, 17, 17);
 }
 
 ul.menu{ /* ajuste de espaciado del menu con flex */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative
+}
+
+nav a.mobile-menu{
+  display: none;
 }
 
 .dropdown{ /* posición para que el menu dropdown se ubique correctamente */
@@ -123,12 +127,6 @@ a.nav-menu{ /* estilo de los links de menu */
 .dropdown:hover .menu-lev2{ /* aparicion del menu desplegable */
     display: block;
 }
-
-/* .carousel{
-    display: flex;
-    flex-direction: row; valor por defecto del flex
-    justify-content: space-between;
-} */
 
 .container{
   position: relative;
@@ -511,8 +509,37 @@ footer a i{
   margin: 0 0.5em;
 }
 
-@media only screen and (max-height: 420px){
+@media only screen and (max-width: 450px){
 
-  
-}
+  nav ul.menu{
+    display: none;
+  }  
+  nav{
+    width: 90%;
+  }
 
+  nav a.mobile-menu{
+    display: block;
+    background-color: rgb(250, 125, 162);
+    color: white;
+    border-radius: 0.5em;
+    line-height: 2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .carousel ul.recipes li.recipe:nth-child(3n+1) {
+    display: none;
+  }
+
+  .container.submenu{
+    flex-direction: column;
+  }
+
+  .container-dostercios, .container-submenu-bg, .post-resumen, aside{
+    width: 100%;
+  }
+
+  .video, .tag-line, .post-content:last-child, .post-img-thumbnail, span.social-ntwk{
+    display: none;
+  }
