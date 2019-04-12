@@ -147,3 +147,7 @@ li.ingredient:before{
     padding-right: 8px;
     color:rgb(250,125,162);
 } 
+
+@media only screen and (max-width: 450px){
+    
+}
