@@ -22,7 +22,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  text-decoration: none;  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -151,14 +152,6 @@ a.nav-menu{ /* estilo de los links de menu */
     display: block;
 }
 
-.container{
-  position: relative;
-  width: 90%;
-  max-width: 900px;
-  margin: 2% auto;
-  overflow: hidden;
-}
-
 
 .carousel{
   display: flex;
@@ -182,9 +175,9 @@ margin: 5px;
 .recipes{
 list-style-type: none;
 margin: 0px;
-padding: 0px;
-    
+padding: 0px;    
 }
+
 .recipes li{
 float: left;
 padding: 0px;
@@ -267,12 +260,6 @@ height: 300px;
 top:20px;
 display: flex;
 }
-  
-.container.submenu, footer.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 .container-submenu-bg{
   width: 32%;
@@ -319,7 +306,7 @@ div.container-submenu-bg a.submenu-cat{
 div.container-submenu-bg a.submenu-cat:hover{
   background-color: rgb(250,125,162);
   opacity: 1;
-  box-shadow: 2px 2px #57575762;  
+  box-shadow: 2px 2px #575757;  
   -webkit-transition:all 0.5s ease-in-out;
   -moz-transition:all 0.5s ease-in-out;
   -o-transition:all 0.5s ease-in-out;
@@ -342,7 +329,7 @@ a.submenu-cat:hover + img{
   max-width: 600px;
   float: left;
   /* flex: 2; */
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -601,6 +588,9 @@ footer a i{
     clear: both;
     transition: height 0.4s ease-in-out, background-color 2s ease 0;
   }
+  div.container{
+    flex-direction: column;
+  }
 
   .carousel{
     margin: 0 auto 1.5em auto;
@@ -632,18 +622,26 @@ footer a i{
     margin: 0 auto 1em auto;
   }
 
-  .latest-posts, .post-content, .post-content-area, .lp{
+  .latest-posts, .lp{
     padding: 0;
     margin: 0;
+  }
+
+  .latest-posts2{
+    border: none;
   }
 
   .lp{
     width: 100%;
     max-width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1.5em 0 0 0;
   }
-  .video, .tag-line, .post-content:last-child, .latest-images, span.social-ntwk{
+
+  .video, .tag-line, .latest-posts-2, .latest-images, span.social-ntwk{
     display: none;
   }
 
@@ -656,7 +654,8 @@ footer a i{
   }
 
   aside{
-    max-width: none;
+    float:none; 
+    max-width: 90vw;
   }
 
   footer{
