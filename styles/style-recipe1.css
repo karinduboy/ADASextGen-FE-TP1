@@ -35,7 +35,7 @@ a.bc-lv1, a.bc-lv2{
 }
 
 .middle-container{
-    width: 40%;
+    width: 45%;
     margin: 5% auto;
     display: flex;
     flex-direction: column;
@@ -44,15 +44,15 @@ a.bc-lv1, a.bc-lv2{
 
 .blog-img{
     width: 100%;
-    height: 50vh;
+    /* height: 40vh; */
     position: relative;
 }
 
 .blog-img-container{
     width: 100%;
-    height: 100%;
+    height: 70vh;
     overflow: hidden;
-    border-radius: calc(40vh/10);    
+    border-radius: calc(40vh/5);    
 }
 
 .blog-img-container img{
@@ -67,23 +67,23 @@ aside.social-btns{
     display: block;
     left: 0;
     top:50%;
-    transform: translate(-200%,-50%)
+    transform: translate(-40%,-50%)
 }    
 
 a.social-icon{
-    width: 1.5em;
-    height:1.5em;
-    border-radius: 0.75em;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
     overflow: hidden;
     display: block;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.75em 0;
 }
 
 a.social-icon .icon{
     color: white;
     display: block;
     /* display: inline-block; */
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     /* line-height: 1.5em; */
 }
@@ -103,7 +103,7 @@ a.tw{
 }
 
 a.gp .icon{
-    font-size: 1.5em;
+    font-size: 2em;
     color:#d34836;
 }
 
@@ -112,15 +112,21 @@ a.ig{
 }
 
 a.pt .icon{
-    font-size: 1.5em;
+    font-size: 2em;
     color: #c8232c;
+}
+
+.post-top-line{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
 }
 
 h1.post-title{
     font-size: 2em;
     font-weight: bold;
     color: black;
-    margin: 1em 0; 
+    margin: 5% 0 1em 0; 
 }
 
 .phrase{
@@ -148,6 +154,63 @@ li.ingredient:before{
     color:rgb(250,125,162);
 } 
 
+li.ingredient:nth-child(1n+2){
+    margin: 2% 0 0 0;
+}
+
 @media only screen and (max-width: 450px){
+    .middle-container{
+        width: 90%;
+    }
+    .container.breadcrumb{
+        flex-direction: row
+    }
+    .blog-img-container{
+        height: 60%;
+    }
+
+    .blog-img{
+        display: block;
+        padding: 20% 0 0 0;
+        height: auto;
+    }
+
+    aside.social-btns{
+        top:10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        float: none;
+    }
+    a.social-icon{
+        width: 3em;
+        height:3em;
+        border-radius: 1.5em;
+        overflow: hidden;
+        display: block;
+        margin: 0 0 1em 0;
+    }
     
+    a.social-icon .icon{
+        color: white;
+        display: block;
+        /* display: inline-block; */
+        font-size: 2.4em;
+        text-align: center;
+        /* line-height: 1.5em; */
+    }
+    
+    a.gp .icon{
+        font-size: 3em;
+        color:#d34836;
+    }
+
+    a.pt .icon{
+        font-size: 3em;
+        color: #c8232c;
+    }
+
+
 }
