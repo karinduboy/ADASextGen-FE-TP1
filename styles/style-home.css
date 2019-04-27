@@ -630,7 +630,7 @@ footer a i{
   .carousel{
     margin: 0 auto 1.5em auto;
   }
-
+  /* cool */
   .carousel ul.recipes li.recipe:nth-child(1n+2) {
     display: none;
   }

@@ -6,10 +6,13 @@
         <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Indie+Flower" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/style-home.css">
+        <link rel="stylesheet" href="tp-results/result.css">
 
         <!-- scripts para el menu touch  -->
+        <!-- el archivo referenciado no existe dentro del documento -->
         <script src="js/menu.js" type="text/javascript"></script>
         <!-- title web -->
+        <script src="tp-results/result.js" type="text/javascript"></script>
     <title>Mi Blog de Cocina</title>
     </head>
   <body id="top">
@@ -38,19 +41,26 @@
     <div class="carousel">
       <ul class="recipes">
         <li class="recipe">
-            <a href="html/recipe1.html"><img src="images/img-5.jpg" height="401px" width="320.5px"></a>
+          <!-- ejemplo de identación apropiada -->
+          <!-- el link no envuelve el contenido que aparece en el hover, por lo tanto no es clickeable aun cuando aparece el puntero de acción -->
+          <a href="html/recipe1.html">
+            <!-- no es recomendable usar pixeles con decimales -->
+            <img src="images/img-5.jpg" height="401px" width="320.5px">
+          </a>
+          <!-- no son necesarios tantos divs para lograr el objetivo, caption y blur son redundantes -->
+          <!-- las dimenciones de los elementos en el ispector no representan el resultado visual, aunque se cumple la función deseada -->
           <div class="caption">
             <div class="blur">
-            <div class="description">
-            <div class="caption-text">
-              <div class="description-p">
-              <p class="carousel">Mayo 17, 2017</p>
+              <div class="description">
+                <div class="caption-text">
+                  <div class="description-p">
+                    <p class="carousel">Mayo 17, 2017</p>
+                  </div>
+                  <p>5 comentarios</a></p>
+                </div>
+                <h2>"La ensalada de siete capas, comida nutritiva."</h2>
+              </div>
             </div>
-             <p>5 comentarios</a></p>
-            </div>
-             <h2>"La ensalada de siete capas, comida nutritiva."</h2>
-            </div>
-          </div>
           </div>
         </li>
         <li class="recipe">
@@ -132,6 +142,7 @@
         </div>
         <section class="latest-posts">  <!-- 2/3 container -->
           <div class="latest-posts2">
+              <!-- es ideal que cualquier elmento div esté debidamente nombrado con clases o ID -->
               <div><!-- para la imagen -->
                 <img class="latest-images" src="images/nota1.JPG" height="150px" width="275px">
               </div>
