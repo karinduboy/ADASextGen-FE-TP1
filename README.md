@@ -1,6 +1,8 @@
 # ADASextGen-FE-TP1
 Repositorio para el primer TP del FrontEnd BootCamp de ADA
 
+Stack: HTML5-CSS3
+
 Se usan fuentes desde Google Fonts...
 en la versión 1: INDIE+Flower y Cutive Mono
 
